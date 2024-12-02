@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Send } from 'lucide-react';
-import { useLanguage } from '../../context/LanguageContext';
+import { useLanguage } from '../context/LanguageContext';
 
 export default function CommentSection() {
   const { language } = useLanguage();

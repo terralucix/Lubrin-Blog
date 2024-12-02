@@ -1,6 +1,6 @@
 import React from 'react';
 import { Camera, Globe, ExternalLink } from 'lucide-react';
-import { useLanguage } from '../../context/LanguageContext';
+import { useLanguage } from '../context/LanguageContext';
 
 export default function AuthorSection() {
   const { language } = useLanguage();
@@ -16,9 +16,9 @@ export default function AuthorSection() {
 
       <div className="space-y-4">
         <img
-          src="https://images.unsplash.com/photo-1519681393784-d120267933ba"
+          src="images/lubrin-sunset.jpg"
           alt="David Leiva"
-          className="w-full h-48 object-cover rounded-lg"
+          className=" h-48 object-cover rounded-lg"
         />
         
         <div>

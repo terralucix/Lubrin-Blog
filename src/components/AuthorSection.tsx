@@ -16,7 +16,7 @@ export default function AuthorSection() {
 
       <div className="space-y-4">
         <img
-          src="images/lubrin-sunset.jpg"
+          src="/images/lubrin-sunset.jpg"
           alt="David Leiva"
           className=" h-48 object-cover rounded-lg"
         />

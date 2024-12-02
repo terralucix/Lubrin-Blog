@@ -103,8 +103,10 @@ export default function Footer() {
                 </div>
               </a>
             </div>
+
+              
           </div>
-          
+         
           <div>
             <h3 className="text-sm font-semibold text-gray-900 tracking-wider uppercase mb-4">
               {t.footer.followUs}
@@ -124,7 +126,7 @@ export default function Footer() {
 
 <div className="mt-8 border-t border-gray-200 pt-8">  <TechLogosCarousel /></div>
        
-        
+         
         <div className="mt-8 border-t border-gray-200 pt-8">
           <p className="text-center text-gray-400">
             © {new Date().getFullYear()} 

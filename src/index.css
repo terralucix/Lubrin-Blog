@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased text-green-900;
+  }
+}
+.logo {
+  width: 50px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 100%;
+ 
+}
+.prose {
+  @apply max-w-none;
+}
+
+.prose h2 {
+  @apply text-2xl font-bold mt-8 mb-4;
+}
+
+.prose p {
+  @apply mb-4 text-green-900 leading-relaxed;
+}
+
+
+.prose a {
+  @apply text-blue-600 hover:text-blue-800;
+}
+
+/* Add backdrop blur to content */
+.bg-blur {
+  @apply bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm;
+}
+
+/* Swiper custom styles */
+.swiper-button-next,
+.swiper-button-prev {
+  @apply text-white !important;
+}
+
+.swiper-pagination-bullet {
+  @apply bg-white/70 !important;
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-white !important;
+}
+
+/* Tech logos carousel animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% - 2rem));
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+  &:hover {
+    animation-play-state: paused;
+  }
+}

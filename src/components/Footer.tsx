@@ -124,7 +124,7 @@ export default function Footer() {
 
 <div className="mt-8 border-t border-gray-200 pt-8">  <TechLogosCarousel /></div>
        
-        
+          <TechLogosCarousel />
         <div className="mt-8 border-t border-gray-200 pt-8">
           <p className="text-center text-gray-400">
             © {new Date().getFullYear()} 

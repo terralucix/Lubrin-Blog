@@ -104,9 +104,9 @@ export default function Footer() {
               </a>
             </div>
 
-              <AuthorSection />
+              
           </div>
-          
+            <AuthorSection />
           <div>
             <h3 className="text-sm font-semibold text-gray-900 tracking-wider uppercase mb-4">
               {t.footer.followUs}

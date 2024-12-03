@@ -21,8 +21,7 @@ import FilabresPage from './pages/about/FilabresPage';
 import TourGuideService from './pages/services/TourGuideService';
 import AccommodationService from './pages/services/AccommodationService';
 import BasicServicesPage from './pages/services/BasicServicesPage';
-import CookieConsent from './components/CookieConsent';
-import CookiesPolicy from './pages/CookiesPolicy';
+
 
 function ScrollToTop() {
   const location = useLocation();
@@ -69,7 +68,7 @@ function App() {
                   <Route path="/about/culture" element={<CulturePage />} />
                   <Route path="/about/local-life" element={<LocalLifePage />} />
                   <Route path="/about/filabres" element={<FilabresPage />} />
-                  <Route path="/cookies-policy" element={<CookiesPolicy />} />
+                  
 
                   
                 </Routes>

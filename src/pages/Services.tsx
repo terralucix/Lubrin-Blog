@@ -12,8 +12,8 @@ export default function Services() {
       icon: <Compass className="h-8 w-8" />,
       title: t.tourGuide,
       description: t.tourGuideDesc,
-      imageUrl: '/images/10272559Master.jpg',
-      link: 'https://www.andalucia.org/es/lubrin'
+      imageUrl: '/images/Lubrin-Feb-2012.jpg',
+      link: '/services/tour-guide'
       //'/services/tour-guide'
     },
     {
@@ -21,7 +21,7 @@ export default function Services() {
       title: t.accommodation,
       description: t.accommodationDesc,
       imageUrl: '/images/pexels-asphotograpy-101808.jpg',
-      link: 'https://www.andalucia.org/es/lubrin'
+      link: '/services/accommodation'
       
       //'/services/accommodation'
     },

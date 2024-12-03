@@ -25,19 +25,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="col-span-1 lg:col-span-2">
             <h2 className="text-2xl font-bold text-gray-900 mb-4"> Lubrin Blog</h2>
-            <p className="text-gray-600 mb-4">
-          <a>  "Descubre Lubrín, un tesoro escondido en la Sierra de los Filabres, Almería. Este blog explora la rica historia, tradiciones y vida actual de nuestro pueblo blanco andaluz. Desde la arquitectura árabe hasta la gastronomía local, pasando por sus fiestas populares y rutas de senderismo, compartimos todo lo que hace único a este rincón mediterráneo.
-Encuentra información práctica sobre:
-
--Turismo rural y alojamientos
--Eventos culturales y festividades
--Gastronomía tradicional
--Rutas de naturaleza
--Historia y patrimonio
--Actualidad local
-
-Un espacio digital para vecinos, visitantes y amantes de la auténtica Andalucía interior."</a>
-            </p>
+        
             <div className="space-y-4">
               <a
                 href={getGoogleMapsUrl()}

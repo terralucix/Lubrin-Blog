@@ -25,7 +25,7 @@ export const translations: Translation = {
       }
     },
     footer: {
-      description: 'A modern blog platform sharing insights and knowledge about technology, programming, and web development.',
+      description: 'Discover Lubrín, a hidden treasure in the Sierra de los Filabres, Almería. This blog explores the rich history, traditions and current life of our white Andalusian village, sharing information about rural tourism, accommodation, cultural events, festivals, traditional cuisine, nature routes, history, heritage and local news. From Arabic architecture to local cuisine, including popular festivals and hiking routes, we show you everything that makes this Mediterranean corner unique. A digital space for local residents, visitors and lovers of authentic inland Andalusia.',
       navigation: 'Navigation',
       followUs: 'Follow Us',
       rights: 'All rights reserved.',
@@ -67,7 +67,7 @@ export const translations: Translation = {
       }
     },
     footer: {
-      description: 'Una plataforma moderna de blog que comparte conocimientos sobre tecnología, programación y desarrollo web.',
+      description: 'Descubre Lubrín, un tesoro escondido en la Sierra de los Filabres, Almería. Este blog explora la rica historia, tradiciones y vida actual de nuestro pueblo blanco andaluz, compartiendo información sobre turismo rural, alojamientos, eventos culturales, festividades, gastronomía tradicional, rutas de naturaleza, historia, patrimonio y actualidad local. Desde la arquitectura árabe hasta la gastronomía local, pasando por sus fiestas populares y rutas de senderismo, te mostramos todo lo que hace único a este rincón mediterráneo. Un espacio digital para vecinos, visitantes y amantes de la auténtica Andalucía interior.',
       navigation: 'Navegación',
       followUs: 'Síguenos',
       rights: 'Todos los derechos reservados.',

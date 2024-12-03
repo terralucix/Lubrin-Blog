@@ -1,80 +1,107 @@
-import React from 'react';
 import { useLanguage } from '../../context/LanguageContext';
-import { Home, Wifi, Coffee, Car, Star, Check } from 'lucide-react';
+import {  Star, ArrowRight } from 'lucide-react';
 import SectionHero from '../../components/SectionHero';
 
 export default function AccommodationService() {
   const { language } = useLanguage();
 
   const accommodations = [
+
+    //casa granado
     {
-      title: language === 'es' ? 'Casa Rural El Olivo' : 'El Olivo Rural House',
+      title: language === 'es' ? 'Casona Granado' : 'Casona Granado',
       type: language === 'es' ? 'Casa Rural' : 'Rural House',
       description: language === 'es'
         ? 'Auténtica casa rural restaurada con vistas panorámicas a la Sierra de los Filabres'
         : 'Authentic restored rural house with panoramic views of the Sierra de los Filabres',
       capacity: '2-6',
-      price: language === 'es' ? 'Desde 80€/noche' : 'From 80€/night',
-      rating: 5,
-      amenities: [
-        language === 'es' ? 'Terraza privada' : 'Private terrace',
-        language === 'es' ? 'Chimenea' : 'Fireplace',
-        language === 'es' ? 'Cocina equipada' : 'Equipped kitchen',
-        'WiFi'
-      ],
-      imageUrl: '/images/accommodation/rural-house.jpg'
+      url:'https://www.andalucia.org/es/lubrin-alojamientos-hostal-casona-granado',
+     
+      rating: 3,
+     
+      imageUrl:'/images/casona.jpg'
+      
     },
+//yedra
+
     {
-      title: language === 'es' ? 'Apartamentos Vista Sierra' : 'Sierra View Apartments',
-      type: language === 'es' ? 'Apartamentos' : 'Apartments',
+      title: language === 'es' ? 'Casa Rural La Yedra' : 'Casa Rural La Yedra',
+      type: language === 'es' ? 'Casa Rural' : 'Rural House',
       description: language === 'es'
-        ? 'Modernos apartamentos con todas las comodidades en el centro histórico'
-        : 'Modern apartments with all amenities in the historic center',
+        ? 'La Yedra ofrece varias terrazas para relajarse y disfrutar de una vista relajada y maravillosa, su piscina. '
+        : 'La Yedra offers several terraces to relax and enjoy a relaxed and wonderful view, its swimming pool.',
       capacity: '2-4',
-      price: language === 'es' ? 'Desde 60€/noche' : 'From 60€/night',
-      rating: 5,
-      amenities: [
-        'WiFi',
-        language === 'es' ? 'Aire acondicionado' : 'Air conditioning',
-        language === 'es' ? 'Balcón' : 'Balcony',
-        language === 'es' ? 'Parking gratuito' : 'Free parking'
-      ],
-      imageUrl: '/images/accommodation/apartments.jpg'
+     url:'https://www.andalucia.org/es/lubrin-alojamientos-casa-rural-la-yedra',
+      rating: 2,
+    
+      imageUrl: '/images/yedra1.jpeg'
     },
+
+//eras
     {
-      title: language === 'es' ? 'Hotel Boutique Lubrín' : 'Lubrín Boutique Hotel',
-      type: language === 'es' ? 'Hotel Boutique' : 'Boutique Hotel',
+      title: language === 'es' ? 'Casa Rural LAS ERAS' : 'Casa Rural LAS ERAS',
+      type: language === 'es' ? 'Casa rural' : 'Rural house',
       description: language === 'es'
-        ? 'Experiencia única de alojamiento con servicio personalizado y diseño exclusivo'
-        : 'Unique accommodation experience with personalized service and exclusive design',
-      capacity: '2',
-      price: language === 'es' ? 'Desde 100€/noche' : 'From 100€/night',
-      rating: 5,
-      amenities: [
-        language === 'es' ? 'Desayuno incluido' : 'Breakfast included',
-        language === 'es' ? 'Servicio de habitaciones' : 'Room service',
-        'WiFi',
-        language === 'es' ? 'Restaurante gourmet' : 'Gourmet restaurant'
-      ],
-      imageUrl: '/images/accommodation/hotel.jpg'
+        ? ' Se encuentra junto al paraje conocido como Cañada Las Eras, de la barriada de la Breña a siete kilómetros de Lubrín'
+        : 'It is located next to the place known as Cañada Las Eras, in the neighborhood of La Breña, seven kilometers from Lubrín.',
+      capacity: '4',
+      url:'https://www.andalucia.org/es/lubrin-alojamientos-casa-rural-las-eras-ii',
+      rating: 2,
+     
+      imageUrl: '/images/eras.jpg'
+    },
+
+//Jabali
+
+    {
+      title: language === 'es' ? 'EL JABALÍ I' : 'EL JABALÍ I',
+      type: language === 'es' ? 'Casa rural' : 'Rural house',
+      description: language === 'es'
+        ? '3 casas (El Jabali I,II, III) distribuidas alrededor de una piscina en una colina, con terraza, zona de barbacoa compartida y aparcamiento privado'
+        : '3 houses (El Jabali I, II, III) distributed around a swimming pool on a hill, with terrace, shared barbecue area and private parking',
+      capacity: '4',
+     
+      rating: 3,
+
+     url:'https://www.andalucia.org/es/lubrin-alojamientos-el-jabali-i',
+      imageUrl: '/images/jabali.jpg'
+    },
+    {
+      
+      
+
+      title: language === 'es' ? 'EL JABALÍ II' : 'EL JABALÍ II',
+      type: language === 'es' ? 'Casa rural' : 'Rural house',
+      description: language === 'es'
+      ? '3 casas (El Jabali I,II, III) distribuidas alrededor de una piscina en una colina, con terraza, zona de barbacoa compartida y aparcamiento privado'
+      : '3 houses (El Jabali I, II, III) distributed around a swimming pool on a hill, with terrace, shared barbecue area and private parking',
+    capacity: '4',
+     
+      rating: 3,
+
+      url:'https://www.andalucia.org/es/lubrin-alojamientos-el-jabali-ii',
+     
+      imageUrl: '/images/jabali2.jpg'
+      
+    }, 
+    
+    {
+      title: language === 'es' ? 'EL JABALÍ III' : 'EL JABALÍ III',
+      type: language === 'es' ? 'Casa rural' : 'Rural house',
+      description: language === 'es'
+      ? '3 casas (El Jabali I,II, III) distribuidas alrededor de una piscina en una colina, con terraza, zona de barbacoa compartida y aparcamiento privado'
+      : '3 houses (El Jabali I, II, III) distributed around a swimming pool on a hill, with terrace, shared barbecue area and private parking',
+    capacity: '4',
+    
+     
+      rating: 3,
+      url:'https://www.andalucia.org/es/lubrin-alojamientos-el-jabali-iii',
+
+      imageUrl: '/images/javali3.jpg'
     }
   ];
 
-  const commonAmenities = [
-    {
-      icon: <Wifi className="h-6 w-6" />,
-      name: 'WiFi'
-    },
-    {
-      icon: <Coffee className="h-6 w-6" />,
-      name: language === 'es' ? 'Desayuno' : 'Breakfast'
-    },
-    {
-      icon: <Car className="h-6 w-6" />,
-      name: language === 'es' ? 'Parking gratuito' : 'Free parking'
-    }
-  ];
-
+ 
   return (
     <div>
       <SectionHero
@@ -82,7 +109,7 @@ export default function AccommodationService() {
         description={language === 'es'
           ? 'Descubre nuestras opciones de alojamiento para una estancia inolvidable'
           : 'Discover our accommodation options for an unforgettable stay'}
-        imageUrl="/images/accommodation.jpg"
+        imageUrl="/images/pexels-asphotograpy-101808.jpg"
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -106,9 +133,7 @@ export default function AccommodationService() {
                       <h3 className="text-xl font-bold dark:text-white">{accommodation.title}</h3>
                       <p className="text-sm text-gray-500 dark:text-gray-400">{accommodation.type}</p>
                     </div>
-                    <span className="bg-blue-100 text-blue-800 text-sm font-semibold px-3 py-1 rounded-full">
-                      {accommodation.price}
-                    </span>
+                  
                   </div>
                   <div className="flex items-center mb-4">
                     {[...Array(accommodation.rating)].map((_, i) => (
@@ -117,17 +142,14 @@ export default function AccommodationService() {
                   </div>
                   <p className="text-gray-600 dark:text-gray-300 mb-4">{accommodation.description}</p>
                   <div className="border-t pt-4">
-                    <p className="text-sm font-medium mb-2">
-                      {language === 'es' ? 'Servicios incluidos:' : 'Included amenities:'}
-                    </p>
-                    <ul className="grid grid-cols-2 gap-2">
-                      {accommodation.amenities.map((amenity, i) => (
-                        <li key={i} className="flex items-center text-sm text-gray-600 dark:text-gray-300">
-                          <Check className="h-4 w-4 mr-2 text-green-500" />
-                          {amenity}
-                        </li>
-                      ))}
-                    </ul>
+                   
+                    <a
+                    href={accommodation.url}
+                    className="inline-flex items-center justify-center w-full px-4 py-2 text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-md transition-colors duration-200"
+                  >
+                    {language === 'es' ? 'Ver detalles' : 'View details'}
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </a>
                   </div>
                 </div>
               </div>
@@ -135,25 +157,11 @@ export default function AccommodationService() {
           </div>
         </section>
 
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold mb-8 text-center">
-            {language === 'es' ? 'Servicios Comunes' : 'Common Services'}
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {commonAmenities.map((amenity, index) => (
-              <div key={index} className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 text-center">
-                <div className="inline-block p-3 bg-blue-50 dark:bg-blue-900 rounded-full mb-4">
-                  {amenity.icon}
-                </div>
-                <h3 className="text-lg font-semibold dark:text-white">{amenity.name}</h3>
-              </div>
-            ))}
-          </div>
-        </section>
+       
 
         <section className="bg-blue-50 dark:bg-gray-700 rounded-lg p-8">
           <h2 className="text-2xl font-bold mb-6 text-center dark:text-white">
-            {language === 'es' ? 'Información de Reserva' : 'Booking Information'}
+            {language === 'es' ? 'Oficina de Turismo' : 'Turist Office'}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white dark:bg-gray-800 rounded-lg p-6">
@@ -161,23 +169,50 @@ export default function AccommodationService() {
                 {language === 'es' ? 'Contacto' : 'Contact'}
               </h3>
               <div className="space-y-2 text-gray-600 dark:text-gray-300">
-                <p>📞 +34 XXX XXX XXX</p>
-                <p>✉️ reservas@lubrin.com</p>
+                <p>📞 +34 693416591</p>
+                <p>✉️ turismolubrin@hotmail.com</p>
+                <p>Calle Álvarez de Sotomayor, 19, 04271, LUBRIN</p>
               </div>
             </div>
-            <div className="bg-white dark:bg-gray-800 rounded-lg p-6">
-              <h3 className="text-xl font-bold mb-4 dark:text-white">
-                {language === 'es' ? 'Políticas' : 'Policies'}
-              </h3>
-              <ul className="space-y-2 text-gray-600 dark:text-gray-300">
-                <li>• {language === 'es' ? 'Check-in: 14:00' : 'Check-in: 2:00 PM'}</li>
-                <li>• {language === 'es' ? 'Check-out: 12:00' : 'Check-out: 12:00 PM'}</li>
-                <li>• {language === 'es' ? 'Cancelación gratuita hasta 48h antes' : 'Free cancellation up to 48h before'}</li>
-              </ul>
-            </div>
+            <a
+                href="https://www.lubrin.es/Servicios/cmsdipro/index.nsf/index.xsp?p=Lubrin"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block"
+              >
+                <div className="bg-white border rounded-lg p-4 hover:shadow-md transition-shadow">
+                  <img
+                    src="/images/logo_web.png"
+                    alt="Ayuntamiento de Lubrín"
+                    className="h-12 object-contain mx-auto mb-2"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      target.src = 'https://www.lubrin.es/Servicios/cmsdipro/image.nsf/imagen.xsp?idfoto=dipalme';
+                      target.onerror = null; // Prevent infinite fallback loop
+                    }}
+                  />
+                  <p className="text-sm text-center text-gray-600">
+                    {language === 'es' ? 'Portal Oficial de Lubrín' : 'Official Lubrín Portal'}
+                  </p>
+                </div>
+              </a>
           </div>
+         
+
         </section>
+
+       
+            </div>
       </div>
-    </div>
+     
+         
+      
+    
   );
+
+
 }
+
+
+
+

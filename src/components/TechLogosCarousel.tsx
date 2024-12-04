@@ -21,6 +21,11 @@ export default function TechLogosCarousel() {
       href: "https://astro.build"
     },
     {
+      src: "/images/typescript.png",
+      alt: "TypeScript",
+      href: "https://www.typescriptlang.org/docs/"
+    },
+    {
       src: "/images/tailwind.svg",
       alt: "Tailwind CSS",
       href: "https://tailwindcss.com"
@@ -29,7 +34,17 @@ export default function TechLogosCarousel() {
       src: "https://www.gstatic.com/lamda/images/gemini_sparkle_v002_d4735304ff6292a690345.svg",
       alt: "Gemini AI",
       href: "https://deepmind.google/technologies/gemini/"
-    }
+    },
+      {
+      src: "/images/developer.png",
+      alt: "Developer",
+      href: "https://juana-developer.vercel.app/"
+    },
+    {
+      src: "/images/photo.png",
+      alt: "Imagen destacada",
+      href: "https://www.flickr.com/photos/dleiva/28548890671/in/photolist-KuLwyX-g9WTk-5kTxPM-JJ9N8A-4rpk7e-FJtUV6-4rtqa7-b1J5Fn-dNKjxQ-2pbCkpn-8rAHVZ-CN3ivM-4dFoQi-2ipZoJn-4f6v1K-8Eeb5s-VWJ9zN-4fauoJ-8Eeo5S-89qkHg-89tAkE-89tznb-c2gbRQ-DijFZf-89qiva-89tyHd-25QmcNr-8Ee8Ty-89qGQg-Dz2N2q-89maKP-4faujm-89qkLM-4fauqf-4dFB2K-DBaXPT-4f6vaP-4rRbe1-89qjqr-8Eerxy-CMVT79-89qkCz-8EbepK-4f6uX4-8EbdAD-DijL7J-89u1QY-4r95P5-4r95P7-8Eb2rV"
+    },
   ];
 
   return (

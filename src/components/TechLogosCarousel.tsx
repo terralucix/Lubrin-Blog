@@ -66,7 +66,7 @@ export default function TechLogosCarousel() {
                 <img
                   src={logo.src}
                   alt={logo.alt}
-                  className="h-8 w-auto object-contain"
+                  className="h-8 md:h-12 lg:h-8 w-auto object-contain"
                   loading="lazy"
                 />
               </a>
